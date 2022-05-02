@@ -1,0 +1,59 @@
+html{
+    cursor: url('./cursor1.png'), auto;
+}
+
+
+
+.graphicsGallery {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.graphicsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.graphicsContainer > img {
+    width: 200px;
+}
+
+.graphicsContainer > img:hover {
+    cursor: url('./cursor2.png'),
+    auto;
+    
+    
+}
+
+
+/* Canvas */
+
+.canvas {
+    position: fixed;
+    top: -3px;
+    left: -3vw;
+    z-index: 100;
+    /* height: 20vw; */
+    /* cursor: url('./cursor2.png'),
+    auto; */
+}
+
+.logoHover {
+    /* cursor: url('./cursor2.png'),
+    auto; */
+}
+
+@media only screen and (max-width: 590px) {
+    .graphicsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vw;
+}
+
+    .graphicsContainer > img {
+        width: 190px;
+        }
+}
